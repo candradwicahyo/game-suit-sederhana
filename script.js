@@ -26,12 +26,11 @@ window.onload = () => {
   }
   
   function aturanPermainan(pemain, lawan) {
-    if (pemain == '') return 'sedang stress berat!';
     if (pemain == lawan) return 'imbang';
     if (pemain == 'gunting') return (lawan == 'kertas') ? 'menang' : 'kalah';
     if (pemain == 'batu') return (lawan == 'gunting') ? 'menang' : 'kalah';
     if (pemain == 'kertas') return (lawan == 'batu') ? 'menang' : 'kalah';
-    return 'program error!';
+    return 'emang GILA PARAH!';
   }
   
 }
